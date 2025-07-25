@@ -1,29 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Color Sort Game</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary Number Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Color Sort Puzzle</h1>
-
-  <div id="instructions">
-    <h3>🧠 How to Play</h3>
-    <p>
-      🎯 Goal: Group same color in a tube (4 same colors).<br/>
-      🟢 Move only the top color.<br/>
-      🟨 Now: You can drop any color into any tube!<br/>
-      ➕ Each level adds 1 color and 1 tube.
-    </p>
-    <button onclick="startGame()">Start Game</button>
-  </div>
-
-  <div id="levelContainer" style="display: none;">
-    <h2 id="level">Level: 1</h2>
-    <div id="game"></div>
-  </div>
-
-  <script src="script.js"></script>
+    <div class="game-container">
+        <div class="heading-bar">
+            <h1>Number Guessing Game</h1>
+        </div>
+        <div class="grid" id="numberGrid"></div>
+        <p id="instructions">Think of any number from the card and type <b>yes</b> to start.</p>
+        <div class="input-row">
+            <input type="text" id="userInput" placeholder="Type here...">
+            <button id="submitBtn">Submit</button>
+        </div>
+        <button id="restartBtn" style="display:none;">Restart</button>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
