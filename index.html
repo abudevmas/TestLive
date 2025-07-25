@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Color Sort Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Color Sort Puzzle</h1>
+
+  <div id="instructions">
+    <h3>🧠 How to Play</h3>
+    <p>
+      🎯 Goal: Group same color in a tube (4 same colors).<br/>
+      🟢 Move only the top color.<br/>
+      🟨 Now: You can drop any color into any tube!<br/>
+      ➕ Each level adds 1 color and 1 tube.
+    </p>
+    <button onclick="startGame()">Start Game</button>
+  </div>
+
+  <div id="levelContainer" style="display: none;">
+    <h2 id="level">Level: 1</h2>
+    <div id="game"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
